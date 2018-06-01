@@ -4,6 +4,12 @@ This section describes the classification analysis to evaluate performance of se
 including Logistic Regression, KNN, Decision Tree, Random Forest, SVC, Naive Bayes and Neural Network, 
 in predicting whether a mushroom with particular attributes is edible or not.
 
+Processing and cleaning of the data are described in the [previous section](https://eagronin.github.io/mushroom-classification-prepare/).
+
+The results and visualizations are reported in the [next section](https://eagronin.github.io/mushroom-classification-report/).
+
+The following code plots he target against two principal componets:
+
 ```python
 # Plot the target as a function of the two principal components
 plt.cla()
@@ -21,7 +27,7 @@ plt.gca().set_aspect('equal')
 pylab.savefig('/Users/eagronin/Documents/Data Science/Portfolio/Project Output/pca.png')
 ```
 
-The plot of the target against the principal componets is presented in the [next section](link to analysis section).
+The plot of the target against the principal componets is presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
 
 Next, the function below visualizes the decision boundary and decision probabilities for a classifier,
 and is called after each classifier was fitted to the training data:
@@ -76,7 +82,7 @@ def decision_boundary(X, y, fitted_model):
 
 Finally, the following code fits each classifier to the training data.  The performance of each classifier is then
 evaluated using the test data.  The plots of decision boundary and decision probabilities for each classifier along 
-with the accuracy scores are presented in the [next section](link).
+with the accuracy scores are presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
 
 ```python
 # Fit logistic regression and plot decision boundary and probabilities
@@ -116,4 +122,4 @@ fig = decision_boundary(X_test, y_test, model)
 pylab.savefig('/Users/eagronin/Documents/Data Science/Portfolio/Project Output/mlp.png')
 ```
 
-Next step: [Reporting](link)
+Next step: [Results](https://eagronin.github.io/mushroom-classification-report/)
