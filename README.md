@@ -4,7 +4,7 @@ This section describes the classification analysis to evaluate performance of se
 including Logistic Regression, KNN, Decision Tree, Random Forest, SVC, Naive Bayes and Neural Network, 
 in predicting whether a mushroom with particular attributes is edible or not.
 
-```
+```python
 # Plot the target as a function of the two principal components
 plt.cla()
 plt.clf()
