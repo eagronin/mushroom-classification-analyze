@@ -1,14 +1,12 @@
 # Analysis
 
-This section describes the classification analysis to evaluate performance of several classifiers, 
-including Logistic Regression, KNN, Decision Tree, Random Forest, SVC, Naive Bayes and Neural Network, 
-in predicting whether a mushroom with particular attributes is edible or not.
+This section describes an analysis of classifying mushrooms into edible and not edible by appllying several classifiers to a feature space reduced to two principal components. The classifiers used in the analysis include Logistic Regression, KNN, Decision Tree, Random Forest, SVC, Naive Bayes and Neural Network.
 
-Processing and cleaning of the data are described in the [previous section](https://eagronin.github.io/mushroom-classification-prepare/).
+Data cleaning and processing is described in the [previous section](https://eagronin.github.io/mushroom-classification-prepare/).
 
-The results and visualizations are reported in the [next section](https://eagronin.github.io/mushroom-classification-report/).
+Accuracy of the classifiers and visualizations of their respective decision boundaries and probabilities are reported in the [next section](https://eagronin.github.io/mushroom-classification-report/).
 
-The following code plots he target against two principal componets:
+The following code plots the target against the first two principal componets of the feature space:
 
 ```python
 # Plot the target as a function of the two principal components
@@ -27,10 +25,9 @@ plt.gca().set_aspect('equal')
 pylab.savefig('/Users/eagronin/Documents/Data Science/Portfolio/Project Output/pca.png')
 ```
 
-The plot of the target against the principal componets is presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
+The plot of the target against principal componets is presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
 
-Next, the function below visualizes the decision boundary and decision probabilities for a classifier,
-and is called after each classifier was fitted to the training data:
+Next, after each classifier is fitted to the training data, the function below is called to visualize the decision boundary and decision probabilities for that classifier:
 
 ```python
 def decision_boundary(X, y, fitted_model):
@@ -80,9 +77,9 @@ def decision_boundary(X, y, fitted_model):
     return fig
 ```
 
-Finally, the following code fits each classifier to the training data.  The performance of each classifier is then
+Each classifier is fitted to the training data as shown in the code below.  The performance of each classifier is then
 evaluated using the test data.  The plots of decision boundary and decision probabilities for each classifier along 
-with the accuracy scores are presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
+with the accuracy score are presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
 
 ```python
 # Fit logistic regression and plot decision boundary and probabilities
