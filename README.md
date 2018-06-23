@@ -1,10 +1,14 @@
 # Analysis
 
+## Overview
+
 This section describes an analysis of classifying mushrooms into edible and not edible by appllying several classifiers to a feature space reduced to two principal components. The classifiers used in the analysis include Logistic Regression, KNN, Decision Tree, Random Forest, SVC, Naive Bayes and Neural Network.
 
 Data cleaning and processing is described in the [previous section](https://eagronin.github.io/mushroom-classification-prepare/).
 
 Accuracy of the classifiers and visualizations of their respective decision boundaries and probabilities are reported in the [next section](https://eagronin.github.io/mushroom-classification-report/).
+
+## Fitting and Visualizing Classifiers
 
 The following code plots the target against the first two principal componets of the feature space:
 
