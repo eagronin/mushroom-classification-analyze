@@ -8,6 +8,10 @@ Data cleaning and processing is described in the [previous section](https://eagr
 
 Accuracy of the classifiers and visualizations of their respective decision boundaries and probabilities are reported in the [next section](https://eagronin.github.io/mushroom-classification-report/).
 
+This project is based on materials from Applied Machine Learning in Python by University of Michigan on Coursera
+
+The analysis for this project was performed in Python.
+
 ## Fitting and Visualizing Classifiers
 
 The following code plots the target against the first two principal componets of the feature space:
