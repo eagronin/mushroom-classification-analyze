@@ -2,7 +2,7 @@
 
 ## Overview
 
-This section describes an analysis of classifying mushrooms into edible and not edible by appllying several classifiers to a feature space reduced to two principal components. The classifiers used in the analysis include Logistic Regression, KNN, Decision Tree, Random Forest, SVC, Naive Bayes and Neural Network.
+This section describes an analysis of classifying mushrooms into edible and not edible by applying several classifiers to a feature space reduced to two principal components. The classifiers used in the analysis include Logistic Regression, KNN, Decision Tree, Random Forest, SVC, Naive Bayes and Neural Network.
 
 Data cleaning and processing is described in the [previous section](https://eagronin.github.io/mushroom-classification-prepare/).
 
@@ -14,7 +14,7 @@ The analysis for this project was performed in Python.
 
 ## Fitting and Visualizing Classifiers
 
-The following code plots the target against the first two principal componets of the feature space:
+The following code plots the target against the first two principal components of the feature space:
 
 ```python
 # Plot the target as a function of the two principal components
@@ -33,7 +33,7 @@ plt.gca().set_aspect('equal')
 pylab.savefig('/Users/eagronin/Documents/Data Science/Portfolio/Project Output/pca.png')
 ```
 
-The plot of the target against principal componets is presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
+The plot of the target against principal components is presented in the [next section](https://eagronin.github.io/mushroom-classification-report/).
 
 Next, after each classifier is fitted to the training data, the function below is called to visualize the decision boundary and decision probabilities for that classifier:
 
